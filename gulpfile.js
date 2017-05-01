@@ -22,11 +22,11 @@ gulp.task('bs-reload', function () {
   browserSync.reload();
 });
 
-gulp.task('images', function(){
-  gulp.src('src/images/**/*')
-    .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
-    .pipe(gulp.dest('dist/images/'));
-});
+// gulp.task('images', function(){
+//   gulp.src('src/images/**/*')
+//     .pipe(cache(imagemin({ optimizationLevel: 3, progressive: true, interlaced: true })))
+//     .pipe(gulp.dest('dist/images/'));
+// });
 
 gulp.task('styles', function(){
   gulp.src(['src/styles/**/*.scss'])
