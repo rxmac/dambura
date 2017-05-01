@@ -1,5 +1,153 @@
-@import "variables", "normalise";
+@import "variables", "normalise", "structure";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto !important;
+}
 
 html {
   background: $beige;
+  font-family: $futura;
+  font-weight: normal;
+  font-size: 20px;
+  color: $brown;
+  @include breakpoint(mobile) {
+    font-size: 18px;
+  }
+}
+
+p, li {
+  line-height: 1.4;
+}
+p { margin-bottom: 1.5em; }
+
+ul { margin-left: 2em; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid;
+  &:hover {
+    color: $orange;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  @include dambura;
+  font-size: 8em;
+  color: $brown;
+  margin: 2rem 0 0 0;
+  @include breakpoint(mobile) { font-size: 6em; }
+}
+h2 {
+  font-size: 1em;
+  margin-bottom: 2em;
+}
+
+.caps { text-transform: uppercase; }
+
+.small { font-size: 13px; }
+
+.textCenter { text-align: center; }
+
+
+.button {
+  display: inline-block;
+  background: $blue;
+  color: $beige;
+  font-weight: 600;
+  padding: 1em 2.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  border: 0;
+  &:hover {
+    transition: background 500ms;
+    background: darken($blue, 20%);
+    color: $beige;
+  }
+  &:active { transform: translateY(1px); }
+}
+.button-big {
+  @extend .button;
+  font-size: 1.25em;
+  margin: 1em 0;
+}
+
+.left { float: left; }
+.right { float: right; }
+
+.clearfix { overflow: hidden; }
+
+.pad {
+  padding: 2em 4em;
+  @include breakpoint(mobile) {
+    padding: 0 4em;
+  };
+}
+
+[class^="strip"] {
+  padding: 2em 0;
+  &.noPad { padding: 0; }
+}
+.strip-fat {
+  padding: 4em 0;
+}
+.strip-primary {
+  background: $orange;
+}
+.strip-secondary {
+  background: $brown;
+  color: $beige;
+}
+.strip-tertiary {
+  background: $pink;
+}
+
+.textfit {
+  @include dambura;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 0.15em;
+  margin-bottom: 0;
+  margin-top: -0.15em;
+  color: $brown;
+
+  &:focus { outline: none; }
+  &:nth-child(even) { color: $beige; }
+  &:last-of-type { padding-bottom: 0;}
+}
+
+.tag {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+// Misc
+
+#download { outline: none; }
+
+
+.charset {
+  @include dambura;
+  font-size: 4em;
+  p {
+    margin-bottom: 2rem;
+    line-height: 1em;
+  }
 }

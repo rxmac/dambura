@@ -1,3 +1,12 @@
+.dambura {
+  font-family: "dambura";
+  font-weight: normal;
+  -webkit-font-feature-settings: 'liga' 1, 'dlig' 1;
+     -moz-font-feature-settings: 'liga' 1, 'dlig' 1;
+          font-feature-settings: 'liga' 1, 'dlig' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased; }
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -369,5 +378,336 @@ template {
 [hidden] {
   display: none; }
 
+.col-1 {
+  width: 8.33333%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-1 {
+      width: 100%; } }
+
+.col-2 {
+  width: 16.66667%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-2 {
+      width: 100%; } }
+
+.col-3 {
+  width: 25%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-3 {
+      width: 100%; } }
+
+.col-4 {
+  width: 33.33333%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-4 {
+      width: 100%; } }
+
+.col-5 {
+  width: 41.66667%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-5 {
+      width: 100%; } }
+
+.col-6 {
+  width: 50%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-6 {
+      width: 100%; } }
+
+.col-7 {
+  width: 58.33333%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-7 {
+      width: 100%; } }
+
+.col-8 {
+  width: 66.66667%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-8 {
+      width: 100%; } }
+
+.col-9 {
+  width: 75%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-9 {
+      width: 100%; } }
+
+.col-10 {
+  width: 83.33333%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-10 {
+      width: 100%; } }
+
+.col-11 {
+  width: 91.66667%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-11 {
+      width: 100%; } }
+
+.col-12 {
+  width: 100%;
+  padding: 15px; }
+  @media only screen and (max-width: 800px) {
+    .col-12 {
+      width: 100%; } }
+
+.flex-col-1 {
+  -ms-flex-preferred-size: 8.33333%;
+      flex-basis: 8.33333%;
+  padding: 15px; }
+
+.flex-col-2 {
+  -ms-flex-preferred-size: 16.66667%;
+      flex-basis: 16.66667%;
+  padding: 15px; }
+
+.flex-col-3 {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+  padding: 15px; }
+
+.flex-col-4 {
+  -ms-flex-preferred-size: 33.33333%;
+      flex-basis: 33.33333%;
+  padding: 15px; }
+
+.flex-col-5 {
+  -ms-flex-preferred-size: 41.66667%;
+      flex-basis: 41.66667%;
+  padding: 15px; }
+
+.flex-col-6 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  padding: 15px; }
+
+.flex-col-7 {
+  -ms-flex-preferred-size: 58.33333%;
+      flex-basis: 58.33333%;
+  padding: 15px; }
+
+.flex-col-8 {
+  -ms-flex-preferred-size: 66.66667%;
+      flex-basis: 66.66667%;
+  padding: 15px; }
+
+.flex-col-9 {
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  padding: 15px; }
+
+.flex-col-10 {
+  -ms-flex-preferred-size: 83.33333%;
+      flex-basis: 83.33333%;
+  padding: 15px; }
+
+.flex-col-11 {
+  -ms-flex-preferred-size: 91.66667%;
+      flex-basis: 91.66667%;
+  padding: 15px; }
+
+.flex-col-12 {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 15px; }
+
+.container, .flex-container {
+  box-sizing: content-box;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.flex-container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  @media only screen and (max-width: 800px) {
+    .flex-container {
+      display: block; } }
+
+.flex-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto !important; }
+
 html {
-  background: #FFEAD9; }
+  background: #FFEAD9;
+  font-family: "futura-pt", sans-serif;
+  font-weight: normal;
+  font-size: 20px;
+  color: #662A1A; }
+  @media (max-width: 800px) {
+    html {
+      font-size: 18px; } }
+
+p, li {
+  line-height: 1.4; }
+
+p {
+  margin-bottom: 1.5em; }
+
+ul {
+  margin-left: 2em; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 2px solid; }
+  a:hover {
+    color: #FF9D33; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-bottom: 0.5em; }
+
+h1 {
+  font-family: "dambura";
+  font-weight: normal;
+  -webkit-font-feature-settings: 'liga' 1, 'dlig' 1;
+     -moz-font-feature-settings: 'liga' 1, 'dlig' 1;
+          font-feature-settings: 'liga' 1, 'dlig' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 8em;
+  color: #662A1A;
+  margin: 2rem 0 0 0; }
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 6em; } }
+
+h2 {
+  font-size: 1em;
+  margin-bottom: 2em; }
+
+.caps {
+  text-transform: uppercase; }
+
+.small {
+  font-size: 13px; }
+
+.textCenter {
+  text-align: center; }
+
+.button, .button-big {
+  display: inline-block;
+  background: #6BBFD6;
+  color: #FFEAD9;
+  font-weight: 600;
+  padding: 1em 2.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  border: 0; }
+  .button:hover, .button-big:hover {
+    transition: background 500ms;
+    background: #3091ab;
+    color: #FFEAD9; }
+  .button:active, .button-big:active {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px); }
+
+.button-big {
+  font-size: 1.25em;
+  margin: 1em 0; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.clearfix {
+  overflow: hidden; }
+
+.pad {
+  padding: 2em 4em; }
+  @media (max-width: 800px) {
+    .pad {
+      padding: 0 4em; } }
+
+[class^="strip"] {
+  padding: 2em 0; }
+  [class^="strip"].noPad {
+    padding: 0; }
+
+.strip-fat {
+  padding: 4em 0; }
+
+.strip-primary {
+  background: #FF9D33; }
+
+.strip-secondary {
+  background: #662A1A;
+  color: #FFEAD9; }
+
+.strip-tertiary {
+  background: #D3549D; }
+
+.textfit {
+  font-family: "dambura";
+  font-weight: normal;
+  -webkit-font-feature-settings: 'liga' 1, 'dlig' 1;
+     -moz-font-feature-settings: 'liga' 1, 'dlig' 1;
+          font-feature-settings: 'liga' 1, 'dlig' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  margin: 0;
+  line-height: 1;
+  padding-bottom: 0.15em;
+  margin-bottom: 0;
+  margin-top: -0.15em;
+  color: #662A1A; }
+  .textfit:focus {
+    outline: none; }
+  .textfit:nth-child(even) {
+    color: #FFEAD9; }
+  .textfit:last-of-type {
+    padding-bottom: 0; }
+
+.tag {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 0; }
+
+#download {
+  outline: none; }
+
+.charset {
+  font-family: "dambura";
+  font-weight: normal;
+  -webkit-font-feature-settings: 'liga' 1, 'dlig' 1;
+     -moz-font-feature-settings: 'liga' 1, 'dlig' 1;
+          font-feature-settings: 'liga' 1, 'dlig' 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-size: 4em; }
+  .charset p {
+    margin-bottom: 2rem;
+    line-height: 1em; }
