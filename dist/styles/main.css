@@ -5,7 +5,8 @@
      -moz-font-feature-settings: 'liga' 1, 'dlig' 1;
           font-feature-settings: 'liga' 1, 'dlig' 1;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased; }
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
 
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 /**
@@ -568,6 +569,8 @@ p, li {
 
 p {
   margin-bottom: 1.5em; }
+  p:last-child {
+    margin-bottom: 0; }
 
 ul {
   margin-left: 2em; }
@@ -578,6 +581,9 @@ a {
   border-bottom: 2px solid; }
   a:hover {
     color: #FF9D33; }
+
+b {
+  font-weight: 600; }
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
@@ -591,6 +597,7 @@ h1 {
           font-feature-settings: 'liga' 1, 'dlig' 1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 8em;
   color: #662A1A;
   margin: 2rem 0 0 0; }
@@ -675,6 +682,7 @@ h2 {
           font-feature-settings: 'liga' 1, 'dlig' 1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   margin: 0;
   line-height: 1;
@@ -707,6 +715,7 @@ h2 {
           font-feature-settings: 'liga' 1, 'dlig' 1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-size: 4em; }
   .charset p {
     margin-bottom: 2rem;

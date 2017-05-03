@@ -7,9 +7,10 @@ $pink: #D3549D;
 @mixin dambura {
     font-family: "dambura";
     font-weight: normal;
-    font-feature-settings: 'liga' 1, 'dlig' 1;
+    font-feature-settings: 'liga' 1, 'dlig' 1; // turn on standard and discretionary ligatures
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased; // nicer for display text
+    -moz-osx-font-smoothing: grayscale;
 }
 .dambura { @include dambura; }
 
