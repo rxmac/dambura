@@ -1,0 +1,17 @@
+@font-face {
+	font-family: 'Dambura';
+	src: url('Dambura.woff2') format('woff2'),
+		url('Dambura.woff') format('woff'),
+		url('Dambura.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.dambura {
+	font-family: 'Dambura', sans-serif;
+	font-weight: normal; /* prevent faux-bold */
+	font-style: normal; /* prevent faux-italic (although this looks pretty cool!) */
+	font-feature-settings: 'liga' 1, 'dlig' 1; /* turn on standard AND discretionary ligatures */
+	text-rendering: optimizeLegibility; /* prioritise legibility; turn on ligatures */
+	-webkit-font-smoothing: antialiased; /* nicer rendering for display text (Webkit)*/
+	-moz-osx-font-smoothing: grayscale; /* nicer rendering for display text (Firefox) */
+}
