@@ -4,8 +4,16 @@ $brown: #662A1A;
 $blue: #6BBFD6;
 $pink: #D3549D;
 
+@font-face {
+	font-family: 'Dambura';
+	src: url('/fonts/Dambura-Regular.woff2') format('woff2'),
+		url('/font/Dambura-Regular.woff') format('woff'),
+		url('/font/Dambura-Regular.ttf') format('truetype');
+}
+
 @mixin dambura {
-    font-family: "dambura";
+    font-family: "Dambura";
+    font-style: normal;
     font-weight: normal;
     font-feature-settings: 'liga' 1, 'dlig' 1; // turn on standard and discretionary ligatures
     text-rendering: optimizeLegibility;
