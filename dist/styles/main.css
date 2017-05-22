@@ -611,6 +611,7 @@ h1 {
   margin: 2rem 0 0 0; }
   @media (max-width: 800px) {
     h1 {
+      margin-top: 1rem;
       font-size: 6em; } }
 
 h2 {
@@ -715,18 +716,3 @@ h2 {
 
 #download {
   outline: none; }
-
-.charset {
-  font-family: 'Dambura', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  -webkit-font-feature-settings: 'liga' 1, 'dlig' 1;
-     -moz-font-feature-settings: 'liga' 1, 'dlig' 1;
-          font-feature-settings: 'liga' 1, 'dlig' 1;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 4em; }
-  .charset p {
-    margin-bottom: 2rem;
-    line-height: 1em; }

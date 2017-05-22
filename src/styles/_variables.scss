@@ -6,13 +6,15 @@ $pink: #D3549D;
 
 @font-face {
 	font-family: 'Dambura';
-	src: url('/fonts/Dambura-Regular.woff2') format('woff2'),
-		url('/font/Dambura-Regular.woff') format('woff'),
-		url('/font/Dambura-Regular.ttf') format('truetype');
+	src: url('/fonts/Dambura.woff2') format('woff2'),
+		url('/font/Dambura.woff') format('woff'),
+		url('/font/Dambura.ttf') format('truetype');
+	font-style: normal;
+	font-weight: normal;
 }
 
 @mixin dambura {
-    font-family: "Dambura";
+    font-family: 'Dambura', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-feature-settings: 'liga' 1, 'dlig' 1; // turn on standard and discretionary ligatures

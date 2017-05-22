@@ -51,7 +51,10 @@ h1 {
   font-size: 8em;
   color: $brown;
   margin: 2rem 0 0 0;
-  @include breakpoint(mobile) { font-size: 6em; }
+  @include breakpoint(mobile) {
+    margin-top: 1rem;
+    font-size: 6em;
+  }
 }
 h2 {
   font-size: 1em;
@@ -145,13 +148,3 @@ h2 {
 // Misc
 
 #download { outline: none; }
-
-
-.charset {
-  @include dambura;
-  font-size: 4em;
-  p {
-    margin-bottom: 2rem;
-    line-height: 1em;
-  }
-}
