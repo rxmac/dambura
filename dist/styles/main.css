@@ -1,9 +1,11 @@
 @font-face {
   font-family: 'Dambura';
-  src: url('/fonts/Dambura-Regular.woff2') format('woff2'), url('/font/Dambura-Regular.woff') format('woff'), url('/font/Dambura-Regular.ttf') format('truetype'); }
+  src: url('/fonts/Dambura.woff2') format('woff2'), url('/font/Dambura.woff') format('woff'), url('/font/Dambura.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal; }
 
 .dambura {
-  font-family: "Dambura";
+  font-family: 'Dambura', sans-serif;
   font-style: normal;
   font-weight: normal;
   -webkit-font-feature-settings: 'liga' 1, 'dlig' 1;
@@ -595,7 +597,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5em; }
 
 h1 {
-  font-family: "Dambura";
+  font-family: 'Dambura', sans-serif;
   font-style: normal;
   font-weight: normal;
   -webkit-font-feature-settings: 'liga' 1, 'dlig' 1;
@@ -681,7 +683,7 @@ h2 {
   background: #D3549D; }
 
 .textfit {
-  font-family: "Dambura";
+  font-family: 'Dambura', sans-serif;
   font-style: normal;
   font-weight: normal;
   -webkit-font-feature-settings: 'liga' 1, 'dlig' 1;
@@ -715,7 +717,7 @@ h2 {
   outline: none; }
 
 .charset {
-  font-family: "Dambura";
+  font-family: 'Dambura', sans-serif;
   font-style: normal;
   font-weight: normal;
   -webkit-font-feature-settings: 'liga' 1, 'dlig' 1;
