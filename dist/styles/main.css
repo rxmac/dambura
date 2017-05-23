@@ -716,3 +716,9 @@ h2 {
 
 #download {
   outline: none; }
+
+.browserupgrade {
+  background: #D3549D;
+  color: white;
+  text-align: center;
+  padding: 1em; }

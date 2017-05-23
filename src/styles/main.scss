@@ -68,6 +68,8 @@ h2 {
 .textCenter { text-align: center; }
 
 
+// Modules
+
 .button {
   display: inline-block;
   background: $blue;
@@ -148,3 +150,10 @@ h2 {
 // Misc
 
 #download { outline: none; }
+
+.browserupgrade {
+  background: $pink;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
