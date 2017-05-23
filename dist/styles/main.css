@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Dambura';
-  src: url('/fonts/Dambura.woff2') format('woff2'), url('/font/Dambura.woff') format('woff'), url('/font/Dambura.ttf') format('truetype');
+  src: url('/fonts/Dambura.woff2') format('woff2'), url('/fonts/Dambura.woff') format('woff'), url('/fonts/Dambura.ttf') format('truetype');
   font-style: normal;
   font-weight: normal; }
 
