@@ -10,6 +10,15 @@ img {
   height: auto !important;
 }
 
+::-moz-selection {
+  color: $beige;
+  background: $orange;
+}
+::selection {
+  color: $beige;
+  background: $orange;
+}
+
 html {
   background: $beige;
   font-family: $futura;

@@ -561,6 +561,14 @@ img {
   max-width: 100%;
   height: auto !important; }
 
+::-moz-selection {
+  color: #FFEAD9;
+  background: #FF9D33; }
+
+::selection {
+  color: #FFEAD9;
+  background: #FF9D33; }
+
 html {
   background: #FFEAD9;
   font-family: "futura-pt", sans-serif;
