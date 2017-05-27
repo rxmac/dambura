@@ -156,6 +156,36 @@ h2 {
   margin-bottom: 0;
 }
 
+.label {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.shareButtons {
+  display: inline;
+  list-style: none;
+  margin: 0;
+  li {
+    display: inline-block;
+    a {
+      font-size: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      display: inline-block;
+      border: 1px solid $brown;
+      color: $brown;
+      padding: 0.5em;
+      border-radius: 3px;
+      margin: 0 4px;
+      &:hover {
+        background: $brown;
+        color: $beige;
+      }
+    }
+  }
+}
+
 // Misc
 
 #download { outline: none; }
