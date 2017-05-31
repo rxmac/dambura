@@ -32,7 +32,7 @@ $(window).on('load', textfit).on('resize', textfit);
 $(document).ready(function() {
 
 // Resize text on keypress and keyup
-$('.editable').on('keypress', textfit).on('keyup', textfit);
+// $('.editable').on('keypress', textfit).on('keyup', textfit);
 
 
 // Scroll to ID
