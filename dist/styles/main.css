@@ -615,11 +615,11 @@ h1 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 8em;
-  color: #662A1A;
-  margin: 2rem 0 0 0; }
+  color: #FF9D33;
+  margin: 0;
+  text-shadow: 0px 0px #662A1A, 1px -1px #662A1A, 2px -2px #662A1A, 3px -3px #662A1A, 4px -4px #662A1A, 5px -5px #662A1A, 6px -6px #662A1A, 7px -7px #662A1A, 8px -8px #662A1A, 9px -9px #662A1A, 10px -10px #662A1A, 11px -11px #662A1A, 12px -12px #662A1A, 13px -13px #662A1A, 14px -14px #662A1A, 15px -15px #662A1A, 16px -16px #662A1A, 17px -17px #662A1A, 18px -18px #662A1A, 19px -19px #662A1A, 20px -20px #662A1A, 21px -21px #662A1A, 22px -22px #662A1A, 23px -23px #662A1A, 24px -24px #662A1A, 25px -25px #662A1A, 26px -26px #662A1A, 27px -27px #662A1A, 28px -28px #662A1A, 29px -29px #662A1A, 30px -30px #662A1A, 31px -31px #662A1A, 32px -32px #662A1A, 33px -33px #662A1A, 34px -34px #662A1A, 35px -35px #662A1A, 36px -36px #662A1A, 37px -37px #662A1A, 38px -38px #662A1A, 39px -39px #662A1A, 40px -40px #662A1A, 41px -41px #662A1A, 42px -42px #662A1A, 43px -43px #662A1A, 44px -44px #662A1A, 45px -45px #662A1A, 46px -46px #662A1A, 47px -47px #662A1A, 48px -48px #662A1A, 49px -49px #662A1A, 50px -50px #662A1A, 51px -51px #662A1A, 52px -52px #662A1A, 53px -53px #662A1A, 54px -54px #662A1A, 55px -55px #662A1A, 56px -56px #662A1A, 57px -57px #662A1A, 58px -58px #662A1A, 59px -59px #662A1A, 60px -60px #662A1A; }
   @media (max-width: 800px) {
     h1 {
-      margin-top: 1rem;
       font-size: 6em; } }
 
 h2 {
@@ -680,6 +680,22 @@ h2 {
 
 .strip-fat {
   padding: 4em 0; }
+
+.strip-hero {
+  height: 100vh;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #B2341B;
+  color: #FFEAD9; }
 
 .strip-primary {
   background: #FF9D33; }

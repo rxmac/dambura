@@ -54,14 +54,22 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin-bottom: 0.5em;
 }
+@function long-shadow($color) {
+  $val: 0px 0px $color;
+  @for $i from 1 through 60 {
+    $val: #{$val}, #{$i}px #{-$i}px #{$color};
+  }
+  @return $val;
+}
 
 h1 {
   @include dambura;
   font-size: 8em;
-  color: $brown;
-  margin: 2rem 0 0 0;
+  color: $orange;
+  margin: 0;
+  text-shadow: long-shadow($brown);
+
   @include breakpoint(mobile) {
-    margin-top: 1rem;
     font-size: 6em;
   }
 }
@@ -121,6 +129,15 @@ h2 {
 }
 .strip-fat {
   padding: 4em 0;
+}
+.strip-hero {
+  height: 100vh;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: $claret;
+  color: $beige;
 }
 .strip-primary {
   background: $orange;
