@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin-bottom: 0.5em;
 }
-@function long-shadow($color) {
+@function extrude($color) {
   $val: 0px 0px $color;
   @for $i from 1 through 60 {
     $val: #{$val}, #{$i}px #{-$i}px #{$color};
@@ -64,10 +64,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   @include dambura;
-  font-size: 8em;
-  color: $orange;
+  font-size: 9em;
+  color: $claret;
   margin: 0;
-  text-shadow: long-shadow($brown);
+  text-shadow: extrude($brown);
 
   @include breakpoint(mobile) {
     font-size: 6em;
@@ -136,7 +136,7 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: $claret;
+  background: $orange;
   color: $beige;
 }
 .strip-primary {
@@ -161,7 +161,7 @@ h2 {
   color: $brown;
 
   &:focus { outline: none; }
-  &:nth-child(even) { color: $beige; }
+  &:nth-child(even) { color: $orange; }
   &:last-of-type { padding-bottom: 0;}
 }
 
