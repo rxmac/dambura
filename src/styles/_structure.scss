@@ -1,3 +1,22 @@
+// Breakpoint Mixin
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: $maxWidth + ($gutterWidth*2) + px ) { @content ; }
+  }
+  @else if $point == laptop {
+    @media (max-width: $maxWidth + ($gutterWidth*2) + px ) { @content ; }
+  }
+  @else if $point == tablet {
+    @media (max-width: 960px)  { @content ; }
+  }
+  @else if $point == mobile {
+    @media (max-width: 600px)  { @content ; }
+  }
+  @else {
+    @media (max-width: $point) { @content ; }
+  }
+}
+
 // Grid
 
 $container-width: 1080;
@@ -8,7 +27,7 @@ $totalColumns: 12;
   .col-#{$columnNo} {
     width: ( (100 / $totalColumns) * $columnNo) + %;
     padding: ($gutter-width / 2) + px;
-    @media only screen and (max-width: 800px) {
+    @include breakpoint(mobile) {
       width: 100%;
     }
   }
@@ -36,24 +55,4 @@ $totalColumns: 12;
 }
 .flex-item {
   flex-grow: 1;
-}
-
-
-// Breakpoint Mixin
-@mixin breakpoint($point) {
-  @if $point == desktop {
-    @media (min-width: $maxWidth + ($gutterWidth*2) + px ) { @content ; }
-  }
-  @else if $point == laptop {
-    @media (max-width: $maxWidth + ($gutterWidth*2) + px ) { @content ; }
-  }
-  @else if $point == tablet {
-    @media (max-width: 960px)  { @content ; }
-  }
-  @else if $point == mobile {
-    @media (max-width: 800px)  { @content ; }
-  }
-  @else {
-    @media (max-width: $point) { @content ; }
-  }
 }

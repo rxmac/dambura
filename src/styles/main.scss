@@ -54,9 +54,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   margin-bottom: 0.5em;
 }
-@function extrude($color) {
+@function extrude($color,$depth) {
   $val: 0px 0px $color;
-  @for $i from 1 through 60 {
+  @for $i from 1 through $depth {
     $val: #{$val}, #{$i}px #{-$i}px #{$color};
   }
   @return $val;
@@ -68,10 +68,14 @@ h1 {
   padding-top: 0.25em;
   color: $claret;
   margin: 0;
-  text-shadow: extrude($darkbrown);
-
+  text-shadow: extrude($darkbrown,60px);
+  @include breakpoint(tablet) {
+    text-shadow: extrude($darkbrown,50px);
+    font-size: 7em;
+  }
   @include breakpoint(mobile) {
     font-size: 6em;
+    text-shadow: extrude($darkbrown,40px);
   }
 }
 h2 {
