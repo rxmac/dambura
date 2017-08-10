@@ -49,7 +49,7 @@ $totalColumns: 12;
   @extend .container;
   justify-content: center;
   display: flex;
-  @media only screen and (max-width: 800px) {
+  @include breakpoint(mobile) {
     display: block;
   }
 }

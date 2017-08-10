@@ -543,7 +543,7 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  @media only screen and (max-width: 800px) {
+  @media (max-width: 600px) {
     .flex-container {
       display: block; } }
 
